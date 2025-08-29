@@ -18,7 +18,13 @@ Perfeito, Lu! Aqui está a versão atualizada do seu `README.md`, agora com a **
 
 ## 🎬 Demonstração
 
-![Demonstração do projeto](./demo.gif)
+**✅ Validação bem-sucedida:**
+
+![Validação OK](./demo-valid.gif)
+
+**❌ Validação com erro:**
+
+![Validação com erro](./demo-error.gif)
 
 > O campo de e-mail muda de cor conforme a validade do texto digitado.  
 > Em breve: animação mostrando a validação em tempo real!
