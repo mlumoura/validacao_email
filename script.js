@@ -6,7 +6,7 @@ form.addEventListener('submit', function (e) {
   e.preventDefault();
 
   const email = emailInput.value.trim();
-  const regex = /^[^\s@]+@[^\s@]+\.[^\s@\.]+(\.[^\s@\.]+)*$/;
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (regex.test(email)) {
     emailInput.classList.remove('erro');
