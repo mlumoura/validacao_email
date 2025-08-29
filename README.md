@@ -1,7 +1,3 @@
-Perfeito, Lu! Aqui está a versão atualizada do seu `README.md`, agora com a **RegEx avançada explicada**, os **badges**, e a seção de **GIF demonstrativo** prontinha pra receber a estrela do show. Tudo com carinho e estilo 💅
-
----
-
 # 📧 Validação de E-mail com JavaScript
 
 > Projeto desenvolvido por [@mlumoura](https://github.com/mlumoura)  
@@ -27,14 +23,6 @@ Perfeito, Lu! Aqui está a versão atualizada do seu `README.md`, agora com a **
 ![Validação com erro](./demo-error.gif)
 
 > O campo de e-mail muda de cor conforme a validade do texto digitado.  
-> Em breve: animação mostrando a validação em tempo real!
-
-📸 *GIF demonstrativo em breve!*  
-*(Você pode gravar com [Screenity](https://chrome.google.com/webstore/detail/screenity-screen-recorder/) ou [LICEcap](https://www.cockos.com/licecap/) e subir como `demo.gif` no repositório)*
-
-```markdown
-![Demonstração do projeto](./demo.gif)
-```
 
 ---
 
@@ -143,7 +131,5 @@ O formulário será enviado e a página recarregada, interrompendo a validação
 Feito com carinho por [@mlumoura](https://github.com/mlumoura)  
 Se curtir, ⭐ o repositório e compartilhe!
 
----
-
-Agora que o README está tinindo, vamos partir pro GIF! Me conta: você quer que ele mostre só a validação do campo ou também a simulação de envio com loading? Posso te ajudar a montar o roteiro visual e até sugerir estilos pra deixar com cara de app profissional. Vamos nessa! 💙
+visual e até sugerir estilos pra deixar com cara de app profissional. Vamos nessa! 💙
 
