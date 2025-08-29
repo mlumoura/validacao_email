@@ -1,9 +1,34 @@
+Perfeito, Lu! Aqui está a versão atualizada do seu `README.md`, agora com a **RegEx avançada explicada**, os **badges**, e a seção de **GIF demonstrativo** prontinha pra receber a estrela do show. Tudo com carinho e estilo 💅
+
+---
+
 # 📧 Validação de E-mail com JavaScript
 
 > Projeto desenvolvido por [@mlumoura](https://github.com/mlumoura)  
 > Repositório: [validacao_email](https://github.com/mlumoura/validacao_email)
 
-Este projeto mostra como validar e-mails em tempo real usando JavaScript puro, manipulando o DOM e simulando uma verificação com backend. Ideal para quem está aprendendo interatividade na web e quer entender como deixar formulários mais inteligentes.
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![HTML](https://img.shields.io/badge/HTML5-%23E34F26.svg?&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-%231572B6.svg?&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?&logo=javascript&logoColor=black)
+![License](https://img.shields.io/github/license/mlumoura/validacao_email)
+![GitHub stars](https://img.shields.io/github/stars/mlumoura/validacao_email?style=social)
+
+---
+
+## 🎬 Demonstração
+
+![Demonstração do projeto](./demo.gif)
+
+> O campo de e-mail muda de cor conforme a validade do texto digitado.  
+> Em breve: animação mostrando a validação em tempo real!
+
+📸 *GIF demonstrativo em breve!*  
+*(Você pode gravar com [Screenity](https://chrome.google.com/webstore/detail/screenity-screen-recorder/) ou [LICEcap](https://www.cockos.com/licecap/) e subir como `demo.gif` no repositório)*
+
+```markdown
+![Demonstração do projeto](./demo.gif)
+```
 
 ---
 
@@ -31,7 +56,7 @@ Este projeto mostra como validar e-mails em tempo real usando JavaScript puro, m
 
 O script realiza:
 
-- ✅ Validação do campo de e-mail com RegEx  
+- ✅ Validação do campo de e-mail com RegEx avançada  
 - 🔄 Feedback visual em tempo real (borda vermelha ou verde)  
 - ⛔ Bloqueio do envio do formulário com `preventDefault()`  
 - 🕒 Simulação de verificação com backend usando `setTimeout`
@@ -40,25 +65,24 @@ O script realiza:
 
 ## 🧪 A RegEx Desmistificada
 
-A expressão regular usada para validar o e-mail é:
-
 ```js
-  const regex = /^[^\s@]+@[^\s@]+\.[^\s@\.]+(\.[^\s@\.]+)*$/;
+const regex = /^[^\s@]+@[^\s@]+\.[^\s@\.]+(\.[^\s@\.]+)*$/;
 ```
 
-Vamos quebrar isso em partes:
+### 🔍 Quebra por partes:
 
-| Parte             | Significado                                                                 |
-|------------------|------------------------------------------------------------------------------|
-| `^`              | Início da string                                                             |
-| `[^\s@]+`        | Um ou mais caracteres que **não** sejam espaço (`\s`) ou arroba (`@`)        |
-| `@`              | Um arroba obrigatório                                                        |
-| `[^\s@]+`        | Um ou mais caracteres após o arroba, sem espaços ou outro arroba             |
-| `\.`             | Um ponto literal (precisa escapar com `\`)                                  |
-| `[^\s@]+`        | Um ou mais caracteres após o ponto                                           |
-| `$`              | Fim da string                                                                |
+| Trecho                    | O que faz                                                                 |
+|---------------------------|---------------------------------------------------------------------------|
+| `^`                       | Início da string                                                          |
+| `[^\s@]+`                 | Um ou mais caracteres que **não** sejam espaço (`\s`) ou arroba (`@`)     |
+| `@`                       | Arroba obrigatória                                                        |
+| `[^\s@]+`                 | Parte do domínio antes do primeiro ponto                                  |
+| `\.`                      | Ponto literal (precisa escapar com `\`)                                   |
+| `[^\s@\.]+`               | Parte do domínio após o ponto (ex: `com`, `br`, etc.)                     |
+| `(\.[^\s@\.]+)*`          | Zero ou mais grupos adicionais com ponto + texto (ex: `.com.br`)         |
+| `$`                       | Fim da string                                                             |
 
-💡 **Resumo:** Garante que o e-mail tenha formato `algo@dominio.com`, sem espaços ou múltiplos `@`.
+💡 **Resumo:** Permite e-mails como `lu@copilot.dev.br`, `contato@sub.dominio.com.br`, e bloqueia formatos inválidos como `lu@`, `lu@email..com`, `lu@.com`.
 
 ---
 
@@ -112,4 +136,8 @@ O formulário será enviado e a página recarregada, interrompendo a validação
 
 Feito com carinho por [@mlumoura](https://github.com/mlumoura)  
 Se curtir, ⭐ o repositório e compartilhe!
+
+---
+
+Agora que o README está tinindo, vamos partir pro GIF! Me conta: você quer que ele mostre só a validação do campo ou também a simulação de envio com loading? Posso te ajudar a montar o roteiro visual e até sugerir estilos pra deixar com cara de app profissional. Vamos nessa! 💙
 
