@@ -113,6 +113,3 @@ O formulário será enviado e a página recarregada, interrompendo a validação
 Feito com carinho por [@mlumoura](https://github.com/mlumoura)  
 Se curtir, ⭐ o repositório e compartilhe!
 
----
-
-Se quiser, posso adicionar um GIF demonstrando o funcionamento, badges de status, ou até uma seção “Aprendizados da Lu” com suas descobertas sobre RegEx. Quer que eu monte isso também?
