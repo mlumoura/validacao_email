@@ -131,5 +131,3 @@ O formulário será enviado e a página recarregada, interrompendo a validação
 Feito com carinho por [@mlumoura](https://github.com/mlumoura)  
 Se curtir, ⭐ o repositório e compartilhe!
 
-visual e até sugerir estilos pra deixar com cara de app profissional. Vamos nessa! 💙
-
