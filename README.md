@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const email = emailInput.value;
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@\.]+(\.[^\s@\.]+)*$/;
 
     if (regex.test(email)) {
       emailInput.style.border = "2px solid green";
