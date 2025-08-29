@@ -3,7 +3,7 @@
 > Projeto desenvolvido por [@mlumoura](https://github.com/mlumoura)  
 > Repositório: [validacao_email](https://github.com/mlumoura/validacao_email)
 
-Este projeto demonstra como validar e-mails em tempo real usando JavaScript puro, manipulando o DOM e simulando uma verificação com backend. Ideal para quem está aprendendo sobre interatividade na web e boas práticas de UX.
+Este projeto mostra como validar e-mails em tempo real usando JavaScript puro, manipulando o DOM e simulando uma verificação com backend. Ideal para quem está aprendendo interatividade na web e quer entender como deixar formulários mais inteligentes.
 
 ---
 
@@ -38,18 +38,31 @@ O script realiza:
 
 ---
 
-## 📦 Detalhes do Código
+## 🧪 A RegEx Desmistificada
 
-### HTML
+A expressão regular usada para validar o e-mail é:
 
-```html
-<form id="formulario">
-  <input type="text" id="email" placeholder="Digite seu e-mail" />
-  <button type="submit">Validar</button>
-</form>
+```js
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@\.]+(\.[^\s@\.]+)*$/;
 ```
 
-### JavaScript
+Vamos quebrar isso em partes:
+
+| Parte             | Significado                                                                 |
+|------------------|------------------------------------------------------------------------------|
+| `^`              | Início da string                                                             |
+| `[^\s@]+`        | Um ou mais caracteres que **não** sejam espaço (`\s`) ou arroba (`@`)        |
+| `@`              | Um arroba obrigatório                                                        |
+| `[^\s@]+`        | Um ou mais caracteres após o arroba, sem espaços ou outro arroba             |
+| `\.`             | Um ponto literal (precisa escapar com `\`)                                  |
+| `[^\s@]+`        | Um ou mais caracteres após o ponto                                           |
+| `$`              | Fim da string                                                                |
+
+💡 **Resumo:** Garante que o e-mail tenha formato `algo@dominio.com`, sem espaços ou múltiplos `@`.
+
+---
+
+## 📦 Trecho do Código Real
 
 ```js
 document.addEventListener("DOMContentLoaded", () => {
@@ -59,9 +72,9 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const email = emailInput.value;
-    const valido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (valido) {
+    if (regex.test(email)) {
       emailInput.style.border = "2px solid green";
     } else {
       emailInput.style.border = "2px solid red";
@@ -102,4 +115,4 @@ Se curtir, ⭐ o repositório e compartilhe!
 
 ---
 
-Se quiser, posso montar uma versão em inglês também, ou transformar isso num template para outros projetos. Quer que eu adicione um GIF demonstrando o funcionamento ou um badge de status?
+Se quiser, posso adicionar um GIF demonstrando o funcionamento, badges de status, ou até uma seção “Aprendizados da Lu” com suas descobertas sobre RegEx. Quer que eu monte isso também?
